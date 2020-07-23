@@ -1,5 +1,6 @@
 # Part 0 (Set up)
 
+Download [pdf][part0full-pdfilink] version
 ## Objective
 
 - overview
@@ -419,3 +420,4 @@ finally, delete app, the cpp binary
 [bracket-web]:http://brackets.io/
 [path-web]:https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)?redirectedfrom=MSDN
 [xcode-web]:https://developer.apple.com/download/
+[part0full-pdfilink]:https://t.me/oe_programming_channel/5
