@@ -1,0 +1,256 @@
+
+Before code is submitted, developer must make sure the code is readable by adding appropriate new lines and spaces.
+All structures or blocks must have open and close braces.
+At the end of every file must be a new line
+single character variables names should not be used but permitted if as loops counter variable.
+No unnecessary comment is needed, and this is why descriptive variable names are advised.
+
+Do not copy and paste code from stackoverflow or from the internet
+
+You have to search things that you may not know of
+
+MAKE SURE THE ABOVE ARE ADHERED TO BEFORE CODE IS SUBMITTED FOR REVIEW.
+
+Part 1
+- Open vscode and create new folder called 'CodeOEXXFunctions' (you can also create the folder 
+and open it with vscode or prefered editor of your choice)
+- Where the XX is your initials, just first and last name 
+- Inside 'CodeOEXXFunctions', create folder called 'src' and a file, 'main.cpp'
+- Inside 'src', create the files, 'my_functions.hpp' and 'my_functions.cpp'. These are the header and source files.
+- Add these lines to 'my_functions.hpp'
+
+```
+#ifndef MY_FUNCTIONS_HPP
+#define MY_FUNCTIONS_HPP
+
+// function headers here
+
+#endif
+```
+
+- Add this line to 'my_functions.cpp', 
+
+```
+#include "my_functions.hpp"
+
+
+```
+
+- Add these lines to main.cpp - do not change main.cpp
+
+```
+#include <iostream>
+#include "src/my_functions.hpp"
+
+using namespace std;
+
+int main (int argc, char const* argv[])
+{
+    // test for sumNatModBy3Or5
+    int startingLimit = 3, endingLimit = 100;
+    int testResult = sumNatModBy3Or5(startingLimit, endingLimit);
+    int testResultExpected = 2418;
+    
+    cout << "sumNatModBy3Or5: ";
+    
+    if (testResult == testResultExpected)
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+    
+    
+    // test for numberIs
+    int testArrayForNumberIs[] = {-5, 0, 6};
+    int testArrayExpectedForNumberIs[] = {-1, 0, 1};
+    
+    for (int i = 0; i < 3; i++)
+    {
+        cout << "numberIs for " << testArrayForNumberIs[i] << ": ";
+        
+        if (numberIs(testArrayForNumberIs[i]) == testArrayExpectedForNumberIs[i])
+        {
+            cout << "passed";
+        }
+        else
+        {
+            cout << "failed";
+        }
+        
+        cout << endl;
+    }
+    
+    cout << endl;
+    
+    
+    // test for sumOfArray
+    int testArrayForSumOfArray[] = {
+        -21, 1, 9, 14, -4,
+        -65, 43, 99, -41, 0
+    };
+    
+    int testValueOfSumOfArray = sumOfArray(10,
+        testArrayForSumOfArray);
+    int testValueExpectedForsumOfArray = 35;
+    
+    cout << "sumOfArray: ";
+    
+    if (testValueOfSumOfArray == testValueExpectedForsumOfArray)
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+        
+    
+    // test for dummyParity
+    int testArrayForDummyParity[20] = {
+        21, 1, 9, 14, 4,
+        65, 43, 99, 41, 0,
+        56, 61, 23, 10, 11,
+        27, 4, 1002, 30, 245
+    };
+    
+    int testValueForDummyParity = dummyParity(testArrayForDummyParity);
+    int testValueExpectedForDummyParity = 12;
+    
+    cout << "dummyParity: ";
+    
+    if (testValueForDummyParity == testValueExpectedForDummyParity)
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+    
+    
+    // test for indexOfGreatestNumber
+    int testArrayForIndexOfGreatestNumber[] = {
+        -21, 1, 9, 14, -4,
+        -65, 43, 99, -41, 0
+    };
+    
+    int testValueOfIndexOfGreatestNumber = indexOfGreatestNumber(10,
+         testArrayForIndexOfGreatestNumber);
+    
+    int testValueExpectedForindexOfGreatestNumber = 7;
+    
+    cout << "indexOfGreatestNumber: ";
+    
+    if (testValueOfIndexOfGreatestNumber == testValueExpectedForindexOfGreatestNumber)
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+        
+    
+    // test for greatestNumber
+    int testArrayForGreatestNumber[] = {
+        -21, 1, 9, 14, -4,
+        -65, 43, 99, -41, 0
+    };
+    
+    int testValueOfGreatestNumber = greatestNumber(10,
+        testArrayForGreatestNumber);
+    
+    int testValueExpectedForGreatestNumber = 99;
+    
+    cout << "greatestNumber: ";
+    
+    if (testValueOfGreatestNumber == testValueExpectedForGreatestNumber)
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+    
+    // leap year
+    int testValueForIsLeapYear = 3004;
+    
+    cout << "isLeapYear: ";
+    
+    if (isLeapYear(testValueForIsLeapYear))
+    {
+        cout << "passed";
+    }
+    else
+    {
+        cout << "failed";
+    }
+    
+    cout << endl
+        << endl;
+    
+    return 0;
+}
+
+```
+
+- Do not add the back ticks
+- Add the function signatures or headers to the header file and implement the function in the source file
+
+
+- open the command line, and compile the code as, 'c++ main.cpp src/my_function.cpp src/my_function.hpp -o app -Wall'
+- execute it as, './app'
+
+- if there is issue with the code, try to debug it using the information from the error message. When issue is persistent, trace the error from the beginning of the file. Ask for assistance from me 
+
+
+Part 2
+- create a new file called, '.gitignore'
+- open '.gitignore' and add the line, 'app' and '.vscode' (this will make sure that you
+ don't push the binary file or any unwanted file onto github
+- Now initialize git on you pc (local repository) as , 'git init'
+- add add all the files to git as, 'git add .'
+- save the files for pushing as, 'git commit -m "<message>" ' (<message>, is a brief 
+description of what you did in your code, note that the message has to be in double 
+quote as above)
+
+
+Part 3
+- head to github.com, create an account if you don't have one else log in into your account
+- create a new repository named as the folder name, 'CodeOEXXFunctions', as you did earlier, locally
+- On your github page, at the top right corner of page, closer to the avatar (image), 
+there is a plus (+) there, click on it then click on 'New repository' on the drop down
+Or on the left side, the side bar of your page where your repositories are displayed, there
+ is a green button that says, 'New', click on it
+- enter the repository name as 'CodeOEXXFunctions', keep the default and click on 'Create repository' button
+- add the remote repository locally as, 'git remote add origin https://github.com/<User-Name>/<CodeOEXXFunctions>.git'
+on the commandline in vscode, else navigate to where the project is created. 
+- push the code you have locally to the remote repo as ,'git push -u origin master'
+
+
+Part 4
+- pm me for review
+- After a review and an update is needed, make changes, add to git, commit and push to remote repo as described in Part 2 and 3
+
+
+Good luck
+

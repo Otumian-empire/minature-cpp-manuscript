@@ -1,0 +1,131 @@
+Problem - Complete each exercise one at a go and wait for the go ahead.
+
+1. Write a function that calculates and prints the sum of all the natural numbers 
+divisible by either 3 or 5, up to a given limit, pass the starting and ending limit
+ as argument to the function.
+ 
+The function signature is:
+ 
+int sumNatModBy3and5(int startingLimit, int endingLimit);
+
+
+2. Write a function that take an integer as argument. The function
+should then return 1, -1 or 0 if the number is positive, negative or zero respectively.
+
+The function signature is:
+
+int numberIs(int number);
+
+
+3. Write a function that takes an integer array and its size as input and then finds
+ and returns the sum all the elements.
+
+The function signature is:
+
+int sumOfArray(int sizeOfArray, int intArray);
+
+
+4. Write a function called dummyParity, taking an array of 20 components of
+type int as argument. Return the number of elements that has the same parity as the 
+first element.
+
+The function signature is:
+
+int dummyParity(int dummyArray[20]);
+
+
+5. Write a function that takes an integer array and its size as argument and returns
+ index of the to find the greatest number
+
+The function signature is:
+
+int indexOfGreatestNumber(int sizeOfArray, int intArray);
+
+6. Write a function that takes an integer array as argument and returns the greatest number
+
+The function signature is:
+
+int greatestNumber(int sizeOfArray, int intArray);
+
+
+7. If the last element in an integer array is '\0', write a function takes an arrays a argument 
+and returns the number of elements in the array.
+
+The function signature is:
+
+int sizeOfArray(int intArray);
+
+
+8. Write a function that takes an int year as argument and returns 1 if the year is a leap year,
+ else 0
+
+The function signature is:
+
+int isLeapYear(int intYear);
+
+
+Instructions
+
+Part 1
+- Open vscode and create new folder called 'CodeOEXX' (you can also create the folder 
+and open it with vscode or prefered editor of your choice)
+- where the XX is your initials, just first and last name 
+- create a file called 'exerciseX.cpp', where X is the exercise number
+- copy and paste the problem into the created 'exerciseX.cpp', and comment it using the
+ multi-line commenting style
+- write your code
+- open the command line, and compile the code as, 'c++ exerciseX.cpp -o app -Wall'
+- execute it as, './app'
+- if there is issue with the code, ask for assistance else proceed to the next step
+
+Part 2
+- create a new file called, '.gitignore'
+- open '.gitignore' and add the line, 'app' and '.vscode' (this will make sure that you
+ don't push the binary file or any unwanted file onto github
+- Now initialize git on you pc (local repository) as , 'git init'
+- add 'exerciseX.cpp' to git as, 'git add exerciseX.cpp', where X is the exercise number
+- save 'exerciseX.cpp' as, 'git commit -m "<message>" ' (<message>, is a brief description
+ of what you did in your code, note that the message has to be in double quote as above)
+
+Part 3
+- head to github.com, create an account if you don't have one else log in into your account
+- create a new repository named as the folder name, 'CodeOEXX', as you did earlier
+(On your github page, at the top right corner of page, closer to the avatar (image), 
+there is a plus (+) there, click on it then click on 'New repository' on the drop down
+Or on the left side, the side bar of your page where your repositories are displayed, there
+ is a green button that says, 'New', click on it)
+- enter the repository name as 'CodeOEXX', keep the default and click on 'Create repository' button
+- add the remote repository as, 'git remote add origin https://github.com/<User-Name>/<CodeOEXX>.git'
+on the commandline in vscode, else navigate to where the project is created. 
+- push the code you have locally to the remote repo as ,'git push -u origin master'
+
+Part 4
+- pm me for review
+
+
+Some basic git commands
+git add file1
+git add file1 file2 ...
+git add .
+
+git commit -m "<commit message>"
+
+git push -u origin <branch name>
+git pull <branch name>
+
+git brach <branch name>
+git checkout <branch name>
+
+
+
+Benefits
+At the end of the day, you reinforce your knowledge on how to use git.
+
+
+
+
+
+
+
+
+

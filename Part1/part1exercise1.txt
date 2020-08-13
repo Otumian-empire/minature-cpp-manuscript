@@ -1,0 +1,71 @@
+
+> Tip: look out for the given inputs ( the available parameters), the desired outputs ( what is expected), and the process ( how to get the output).
+
+**Analyse and design a solution for the following problems.**
+
+1. Given that a quadratic equation is of the form, `Ax^2 + Bx + C = 0` , where `A` , `B` , `C` are real parameters such that `A` , `B` is not zero. `A` and `B` are the co-efficients of `x` , of second and first degrees respectively and `c` a constant. Find and output the roots of the quadratic equation.
+
+1. Find the Area of a circle of radius, `r` , given that `PI` is `3.143` .
+
+1. A shop keeper sold an item of cost, `$340.00` at `$372.99` including a tax of `$2.99` .find the 
+    - selling price
+    - profit made
+    - profit percentage
+    - tax percentage
+Implement the design from the practicals in `exercise 5 b (Design of a solution)` 
+
+1. write a program that finds the sum then the average of five numbers, by asking the user to enter then as floats. Display all the inputs, the sum and then the average. [Use descriptive outputs]
+1. Write a simple program to simulate an interview for Python developers. Display the anwsers in an essay form, with heading, `Your responds` .
+
+
+* Write a program to take input from the user, print the input, seperated by a short-dash, `-` , and the length of the string. `Eg: input='Doe', output=Doe - 3` 
+* Write a program that reads data from the user and converts the data to lower case, upper case, title and capitalize.
+
+
+Using the new concept in this exercise and the white space character, newline - `\n` , write a program that accepts from the user, inputs, name, age, sex and hobby. Output a descriptive essay of the values taken.
+
+
+## Practicals
+
+* Find the Truth Value of the following:
+    - `True and not False` 
+    - `not True and not False` 
+    - `True and False and True or False` 
+    - `True or False and True or False` 
+* Write a simple program that makes use of all the relational and logical operators.
+
+
+* Write a program that checks if a given integer input is a multiple of 2, 3 or both 2 and 3 and then print what multiple it is with the input.
+
+``` Python
+# the code should behave this way
+
+# input = 4
+# output = 4 is a multitple of 2
+
+# input = 6
+# output = 6 is a multitple of 2 and 3
+
+# input = 9
+# output = 9 is a multitple of 3
+
+# input = 18
+# output = 18 is a multitple of 2 and 3
+```
+
+
+* write a lift off program using a for loop
+* Given a list of alphabets, from `a - z` , use a loop to print out the vowels ( Tips: `list of vowels, loop, condition` )
+* Write a program that simulates the rolling of a dice. A fair dice has 6 sides numbered from 1 to 6. Take an integer input from the user as the number of times the dice must be rolled and this value must be greater than 50. Using a `loop` ( any `loop` ) and an `if` , `elif` and `else` statement ( if necessary) and then `print` the number of times a particular number was obtained when the dice was rolled.
+
+
+* Given a list, whose elements are also list ( talking about nested list), write a function that sorts this list and it list elements if possible
+
+
+* Implement a function known as `all(iterable)` . This function returns `True` if all of the elements of the `iterable` is `True` or the `iterable` is empty, else `False` .
+* Implement a function known as `any(iterable)` . This function returns `True` if any of the elements of the `iterable` is `True` . If the iterable is empty, return False.
+* Implement the `abs(x)` function where `x` , is a number.
+* Implement a function that returns the minimum and maximum numbers in given list. Don't use the built-in function `min` and `max` .
+
+
+> this is supposed to be fun

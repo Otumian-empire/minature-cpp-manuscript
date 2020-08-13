@@ -1,0 +1,7 @@
+Hello, I trust you are well.That is great news.
+It will be required that you download and install a c++  compiler from http://www.mingw.org/. This video will be of great help. https://www.youtube.com/watch?v=guM4XS43m4I
+Secondly, Create a free github account at github.com and install git from https://git-scm.com/download/win. Accept the default settings.Download your favourite text editor and let me know when you are done.
+
+We shall start as soon as you are ready.
+My regards.
+

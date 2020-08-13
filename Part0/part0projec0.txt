@@ -1,0 +1,12 @@
+project 0 
+
+create a folder, helloworldcpp
+create a file, helloworld.cpp, helloworldcpp
+
+Now, write a hello world program in cpp in helloworld.cpp file
+
+compile the cpp file as, c++ helloworld.cpp -o app
+run the cpp binary as, ./app
+
+finally, delete app, the cpp binary
+

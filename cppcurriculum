@@ -1,0 +1,111 @@
+C++ (C Plus Plus) Programming With Otumian
+
+Part 0 (Set up)
+overview
+c++ command line interface basics
+c++ environment setup (compiler and text editor)
+c++ hello world program (how to compile and run code)
+exercise 0
+project 0
+
+Part 1 (Introduction)
+c++ comments
+c++ iostream, std namespace and keywords
+c++ data types
+c++ variable and scope
+c++ constants/literals
+c++ operators
+c++ decision making
+c++ loops
+c++ arrays
+c++ functions (overloading, headers files, static variables)
+c++ project 1
+c++ project 2
+c++ project 3
+
+
+Part 2
+c++ with git and github
+c++ unittesting (google, cppuittest, boost)
+c++ project 1
+c++ project 2
+c++ project 3
+
+
+Part 3
+c++ vectors
+c++ dynamic memory, memory management, memory allocation
+c++ standards
+c++ pointers and references (pointer iterators)
+c++ date and time
+c++ project 1
+c++ project 2
+c++ project 3
+
+
+Part 4 (OOP and )
+c++ object oriented (UML)
+c++ modifier types
+c++ classes and objects
+c++ inheritance
+c++ overloading/overriding
+c++ polymorphism
+c++ abstraction
+c++ encapsulation
+c++ interfaces (virtual)
+c++ templates
+c++ namespaces
+c++ preprocessor
+c++ commandline arguments
+c++ library (header files, stl lib)
+c++ exception handling
+c++ file processing (files and streams)
+c++ project 1
+c++ project 2
+c++ project 3
+
+
+(explore with the knowledge of c++, Whats next?)
+c++ signal handling
+c++ multithreading
+c++ data structures
+c++ algorithms
+c++ competitive programming
+c++ gui
+c++ system development
+c++ Language Compilers
+c++ Assemblers
+c++ Text Editors
+c++ Print Spoolers
+c++ Network Drivers
+c++ Modern Programs
+c++ Databases
+c++ Language Interpreters
+c++ Utilities
+
+
+Resources
+c++ tutorials
+    https://en.wikipedia.org/wiki/C%2B%2B
+    http://en.cppreference.com/w/
+    https://www.learn-cpp.org/
+    https://www.cprogramming.com/
+
+unittesting
+    https://www.drdobbs.com/testing/unit-testing-in-c-tools-and-conventions/240156344
+
+practice
+    https://exercism.io/tracks/cpp
+
+
+cmd, git, makefile, books and others
+    https://seankross.com/the-unix-workbench/
+    https://opensource.com/article/18/8/what-how-makefile
+    https://www.gnu.org/software/make/manual/make.pdf
+    https://www.cprogramming.com/tutorial/makefiles.html
+    https://opensource.com/resources/what-is-git
+    http://www.buildyourownlisp.com/    
+    https://github.com/HackYourFuture/teaching_tips_tricks
+    https://github.com/arishuynhvan/C-Plus-Plus-Programming-Books
+
+

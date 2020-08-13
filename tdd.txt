@@ -1,0 +1,12 @@
+About TDD
+
+To use pure TDD is kind of a change in mindset. There aren't any simple tutorials to you help on that; as entire books have been written about how to use TDD.
+
+However, I can provide you with some guidelines.
+
+    1- Identify the public interface of your class. Which methods should external classes be able to use? What should be the input and what should be the output of these methods?
+    2- Identify the different cases of the method. When should it output true/false? When should it throw an exception?
+    3- Write the test-cases based on the cases you have found in 2.
+    4- Write the most basic dummy class for FileChunk, which essentially does nothing, but does have all functionality the unit-tests are testing. This way all tests can be run, although they will probably fail.
+    5- Start improving the FileChunk-class until all tests pass.
+

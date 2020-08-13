@@ -1,0 +1,372 @@
+Part 1 (Introduction)
+
+Objective
+c++ comments
+c++ iostream, std namespace and keywords
+c++ data types
+c++ variable and scope
+c++ constants/literals
+c++ operators
+c++ decision making
+c++ loops
+c++ arrays
+c++ functions (overloading, headers files)
+
+Goal
+understand and use comment
+make use of cin and cout from iostream header and std namespace
+know when to use integer and float or double
+undestands the concept of a variable and its scope
+make use of if statement for decision making in program
+reduce the number of lines of code by using looping
+understand when to use for loop and while
+chnage one loop construct to the other
+understand arrays and loop through arrays
+make code modula by using functions
+
+
+c++ comments
+
+// helloworld.cpp
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello world!!" << endl;
+    return 0;
+}
+
+The code above is the helloworld program we wrote sometime ago. The first line, which is , // helloworld.cpp is a comment.
+
+Comments are parts of the code that the compiler ignores during compilation. We may use a comment to document our code, telling what, why or how some part of the code works. Comments can also be used for debugging, indirectly speaking but it is possible.
+
+There are two ways of applying comments in our code and these are the single line comment and multiline comments.
+The first line in the helloworld program is a single line comment. So the double forward slash sign is used for single line commenting.
+
+/* ... */ is use for multiline commenting. Consider the sample code below
+
+/*
+Helloworld program in c++
+Demonstration of the use of multiline comments
+*/
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Hello world!!" << endl;
+    return 0;
+}
+
+The best thing about comments is knowing when to using them.
+
+
+c++ iostream, std namespace and keywords
+
+#include <iostream> is one of the line one would write over and over and over again in their program. This actually tells use that input and output would be, not necessaily, be used in our code. The iostream stands input and output stream, basically for reading and displaying data. cin for input and cout for output. SO if you want to take or display data, #include <iostream> must be added to your cod.
+
+cout is used with the insertion operator, << and cin is used in conjunction with the extraction operator, >>.
+
+save the code below into a file and save it as a c++ file.
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numberOfPage;
+    cout << "how may pages? ";
+    
+    cin >> numberOfPages;
+    
+    cout << "Number of pages " << numberOfPages << endl;
+    
+    return 0;
+}
+
+int main() is a function that drives the whole program, that is where the program starts and after it the program ends. {, may signify where the program starts. Something more like, saying, start. The last like which is }, says something like, end or stop program, main.
+
+{} also indicate the body (structure) of the main function and other constracts.
+
+In the body of main, we declare an integer variable (chunk of memory) as, int numberOfPage. The semicolon, tells the compiler that, that is the ends of the expression. Next is, cout << "how may pages? ", which prompts the user how many pages - displays a message asking the user the number of pages. Then the line, cin >> numberOfPages, takes input from the user (from the standard input device, the keyboard) and saves it into the variable (named chunk of memory), numberOfPages. Finally we display the number of pages with some text data (stream). Multiple input data can be taken at a go as in, cin >> a >> b >> c, and so on. This is also the same for the cout. cout << a << b << c. This is just like, cout << "Number of pages " << numberOfPages << endl.
+Now the endl means add newline or move to the next line after this out put.
+return 0, is the return value of the main function. 0 is an integer.
+
+the main function is also of the form,
+
+int main() {
+    // code
+    
+    return 0;
+}
+
+
+using namespace std;
+Let a vocabulary book is a namespace. In the vocabulary book, there are works that are used for a particular situations. So there are words that a best fit for the kitchen, class room, party, etc. There can  be a word used in the class room or home that may have the same spelling  but different meaning as as such you group then into namespace. I hope the idea of a namespace is manifesting now? Connotation ans denotation. The reason for using namepaces to to avoid conflicts in using "words". cin, cout, endl and others are in the namespace, std. This is why we had to use the namespace std; If you have to use multiple nanespaces and there is a chance that there'd a collision, it is best to use the scope resolution operator, ::, as namespace::word. The code below shows a different approach without including, using namespace std, in the program.
+
+#include <iostream>
+
+int main() {
+    int numberOfPage;
+    std::cout << "how may pages? ";
+    
+    std::cin >> numberOfPages;
+    
+    std::cout << "Number of pages " << numberOfPages << std::endl;
+    
+    return 0;
+}
+
+Most developers prefer this approach but as a novices, it doesn't really matter now. It won't hurt to adopt this approach anyway
+
+
+keywords
+Keywords are names that c++ uses as we developers must not use such names as variable names, function names or class names. The list below is the keywords in c++:
+
+asm	            else	        new	                this
+auto	        enum	        operator	        throw
+bool	        explicit	    private	            true
+break	        export	        protected	        try
+case	        extern	        public	            typedef
+catch	        false	        register	        typeid
+char	        float	        reinterpret_cast	typename
+class	        for	            return	            union
+const	        friend	        short	            unsigned
+const_cast	    goto	        signed	            using
+continue	    if          	sizeof	            virtual
+default	        inline	        static	            void
+delete	        int	            static_cast	        volatile
+do	            long	        struct	            wchar_t
+double	        mutable     	switch	            while
+dynamic_cast	namespace	    template	        And
+bitor	        not_eq	        xor                 and_eq
+compl	        or	            xor_eq              bitand
+not	or_eq
+
+c++ data types
+Data types are the kind of values we can use in our program. Data types define the amount of memory to be allocated for a value and what kind of operations may be perform on the value. Consider the list below as the fundamental data types we'd use mostly:
+
+character(char) integer(int) float double
+boolean void structure class
+string pointer etc
+
+c++ variable and scope
+A variable is a placeholder the for the memory address of a value in memory. We can picture a variable as a chunk of memory, with a name give to that address. As such when ever the variable is reference, the value at that address is returned. 
+
+When a variable is declared, it prompts the compiler that the developer want some named chunk of memory to used. variable declaration is done by first telling the type of data needed followed by the placeholder (variable name) for the memory then a semi-colon. Conside the below as examples of declaring variables.
+
+int age;
+char grade;
+string fullName;
+double height;
+
+int, char, string and double are data types but age, grade, fullName and height are placeholders or variable names.
+
+After a varible is declared, now it may be assigned a value later. variable assignment is done in two ways, when the variable has been declared already and when the variable is not declared already.
+
+For the above examples, gae, grade, fullName and height, we can assign values to these variables by using the assignment operator as in, <variable> = <value>;
+
+age = 18;
+grade = 'A';
+fullName = "Daniel";
+height = 23.7;
+
+But how is a string different from a character? character is delimited by single quotes whiles double quotes, string.
+
+If age, grade, fullName and height were not declared alredy we'd assugn values to them as in, <data type> <name> = <value>;
+
+int age = 18;
+char grade = 'A';
+string fullName = "Daniel";
+double height = 23.7;
+
+A variable must be defined/created before used. So with the above, we do not have weight, thus use weight in program will give use an error.
+
+A variable name, must either start with a letter or an underscore, followed by atleast a number, a letter or an underscore. No spaces or special characters such as +, -, =, /, etc may be used. Try it yourself to see.
+
+A variable name can be written using the snake_case, camelCase and PascalCase. snake case by separating the variable name with underscores. camel case is by starting the first character of the first word in the variable name lower case and the rest uppercase. Pascal case is by starting the first character of the first word with an uppercase letter and the rest uppercase as well. Consider the examples below:
+
+// snake_case
+int year_of_birth = 2000;
+
+// camelCase
+int monthOfBirth = 10;
+
+// PascalCase
+int DayOfBirth = 2;
+
+Usually class names are PascalCase, functions and variables may be camelCase or snake_case. I sometimes use both through out my code. 
+
+The code below makes use of the variables we created previously
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 18;
+    char grade = 'A';
+    string fullName = "Daniel";
+    double height = 23.7;
+
+    cout << "Full name: " << fullName << endl;
+    cout << "Age: " << age << endl;
+    cout << "Grade: " << grade << endl;
+    cout << "Height: " << height << endl;
+
+    return 0;
+}
+
+
+c++ constants/literals
+
+2, 3, 2.6, -4.5, 'A', "Hello", etc are considered constants since, 2 remains 2, 'A' remainds 'A' and can not be changed. For the fact they can not be changed, earned them the name a constant.
+
+
+c++ operators
+
+operators are symbols, just like the reserved keywords, are reserved for some special operations such as arithmetic, relational and logical.
+
+symbols such as +, -, /, %, and * are reserved for arithmetic operations
+symbols such as <, >, <=, >=, == and != are reserved for relational operations (comparison)
+symbols such as and (&&), or (||) and not (!) are reserved for logical operations
+
+All the operators, except not, are binary operators thus may be used as, <operand> <operator> <operand>. operators such as +, -, and not can be used as uninary operators. This means, we may have negative (or minus) one, -1 and positive three, +3, which is basically, 3. not can be used not <operand>.
+
+relational and logical operators return boolean values, as in true (1) or false (0). For clarity, we can put operations in brackets. This can also be used to alter the precedence of the arithmetic operations.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 18, currentYear = 2030;
+
+    double height = 23.7;
+
+    cout << (age >= 18) << endl;
+    cout << "Year of Birth: " << currentYear - age << endl;
+
+    return 0;
+}
+
+
+c++ decision making
+
+decision making is also known as selection. decision making is based on some boolean value or the resulting value of a condition, which dictates what should be done if the decision holds (tends to be true).
+
+So let us consider a basic case where by an individual enters a bar and orders an alcoholic beverage. How would the bar tender know if this individual should be served alcohol? The best way out is by taking (asking) this individual some particular data, such as date of birth, age or an ID and drawing a valid conclusion based on the age of this individual.
+
+So, it goes like this, if this individual is eighteen years or above, then this individual may be served else, ack for a different order or call the manager or police. This is if, the allowed age for alcohol consumption is eighteen years or above.
+
+The use of relational operators becomes useful over here. The basic form of condition in c++ takes the form,
+
+if (conditional expression) {
+    do This
+} else {
+    do that
+}
+
+If the conditional expression, becomes true or returns 1, then the body of the if is executed, else, the body of the else block is executed. The if block starts from the { after the ) and whatever that comes before }. If the conditional expression evaluated to false or 0, the else block is executed. The else block starts from {, after the else keyword and ends after all that comes before }.
+
+In our simple case we are investigating, what do you think will be the some of the data need from the individual who wants to be served alcohol? age? What is the condition for a person to be served alcohol? The person must be 18 years or above. In order sense or kind of mathematical or logically, the persons age must greater than or equal to 18.
+
+There are two ways to write the conditional expression, assumming age is a variable holding the age of the person to be served the alcohol. first, (age == 18) || (age > 18) and secondly, age >= 18. The first and second are actually the same. Consider the code below demonstrating the use of conditions.
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age = 18;
+    if (age >= 18) {
+        cout << "Have a bottle" << endl;
+    } else {
+        cout << "I think I should call your mom" << endl;
+    }
+    
+    return 0;
+}
+
+For the above code, try changing, reducing and increasing the value for age and see what happens.
+
+There is this concept nested conditions. Cosider the code below that prompts a user to enter a number then checks if a number is odd and greater that 10.
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number % 2 == 1) {
+        if (number > 10) {
+            cout << "number is odd and greater than 10" << endl;
+        } else {
+            cout << "number is odd but less than 10" << endl;
+        }
+    } else {
+        cout << "Number is not odd" << endl;
+    }
+    
+    return 0;
+}
+
+For the above code, we may reduce to a single conditional expression
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    if (number % 2 == 1 && number > 10) {
+        cout << "number is odd and greater than 10" << endl;
+    } else {
+        cout << "Number is not odd or number is odd but less than 10" << endl;
+    }
+    
+    return 0;
+}
+
+
+c++ loops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

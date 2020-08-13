@@ -1,0 +1,84 @@
+Problem - Complete each exercise one at a go and wait for the go ahead
+
+1. Write a program that calculates and prints the sum of all the natural numbers 
+divisible by either 3 or 5, up to a given limit entered by the user.
+
+2. Write a program that prompts the user to input a number. The program
+should then output the number and a message saying whether the number is
+positive, negative, or zero.
+
+3. Write a program that reads a set of integers and then finds and prints the sum
+of the even and odd integers. (use an array)
+
+4. Write a program that declares an array epsilon of 20 components of
+type int . Initialize the array so that the first 10 components are equal to
+the cube of the index variable, and the last 10 components are equal to
+three times the index variable. Output the array so that 10 elements per line
+are printed.
+
+
+Instructions
+
+Part 1
+- Open vscode and create new folder called 'CodeOEXX' (you can also create the folder 
+and open it with vscode or prefered editor of your choice)
+- where the XX is your initials, just first and last name 
+- create a file called 'exerciseX.cpp', where X is the exercise number
+- copy and paste the problem into the created 'exerciseX.cpp', and comment it using the
+ multi-line commenting style
+- write your code
+- open the command line, and compile the code as, 'c++ exerciseX.cpp -o app -Wall'
+- execute it as, './app'
+- if there is issue with the code, ask for assistance else proceed to the next step
+
+Part 2
+- create a new file called, '.gitignore'
+- open '.gitignore' and add the line, 'app' and '.vscode' (this will make sure that you
+ don't push the binary file or any unwanted file onto github
+- Now initialize git on you pc (local repository) as , 'git init'
+- add 'exerciseX.cpp' to git as, 'git add exerciseX.cpp', where X is the exercise number
+- save 'exerciseX.cpp' as, 'git commit -m "<message>" ' (<message>, is a brief description
+ of what you did in your code, note that the message has to be in double quote as above)
+
+Part 3
+- head to github.com, create an account if you don't have one else log in into your account
+- create a new repository named as the folder name, 'CodeOEXX', as you did earlier
+(On your github page, at the top right corner of page, closer to the avatar (image), 
+there is a plus (+) there, click on it then click on 'New repository' on the drop down
+Or on the left side, the side bar of your page where your repositories are displayed, there
+ is a green button that says, 'New', click on it)
+- enter the repository name as 'CodeOEXX', keep the default and click on 'Create repository' button
+- add the remote repository as, 'git remote add origin https://github.com/<User-Name>/<CodeOEXX>.git'
+on the commandline in vscode, else navigate to where the project is created. 
+- push the code you have locally to the remote repo as ,'git push -u origin master'
+
+Part 4
+- pm me for review
+
+
+Some basic git commands
+git add file1
+git add file1 file2 ...
+git add .
+
+git commit -m "<commit message>"
+
+git push -u origin <branch name>
+git pull <branch name>
+
+git brach <branch name>
+git checkout <branch name>
+
+
+
+Benefits
+At the end of the day, you reinforce your knowledge on how to use git.
+
+
+
+
+
+
+
+
+

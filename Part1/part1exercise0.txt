@@ -1,0 +1,31 @@
+part 1 exercise 0
+
+Create 10 variables and assign them any values suitable ( perhaps, as above).
+
+1. Look into `Exercise 1 ( creating a variable)` , and for the 10 varaibles we created earlier, state their data types
+
+1. What will be the data type of the following values, `'University of github', 'swift-Python', 100, 12.0, 12, 'B+', '1 + 1', 345.0, 360, 3.1432, "sipping ice cream from a linux cup"` 
+
+1. Now create a variable with a suitable name ( the name of the variable should be in a way that describes or gives an information about what the value of interest is) `Eg: user_ip = '123.123.100.134' and user_name = 'John Doe'` 
+
+1. In `Exercise 2 (Data types)` , add comments to your solutions to give the why/what the line is doing or meant to do ( remember that not all lines needs comment if the code is discriptive itself).
+
+1.  - How many comments are there in the code below?
+    - Which parts ( line numbers) would be displayed and why? 
+
+    ``` python 
+    1 # John Doe - profile
+    2 print("My name is John Doe") # yes that's my name
+    3 print("He washes my hair")
+    4 # i like to dance in the rain print("This costs $25.00")
+    5 my_name = "Danny Doe Dan"
+    ```
+
+write a program to evalute and print the results of the following given that `a = 2` and `b = 5` :
+
+1.  - a * (2 * b) - 5
+    - 2 * (b - a) + b
+1. (-(a * b) ** 2 - (4 * a * b) ) / ((b // a) // 3 + (16 / a / b))
+1. ((a ** 2) - (b ** 2)) // ((b - a) ** 2)
+1. ((a + b) % 2) - ((b % a) + 1)
+

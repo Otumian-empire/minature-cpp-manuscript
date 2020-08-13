@@ -1,0 +1,5 @@
+- State what you are trying to do.
+- Share a screen shot of your code, or a link to a codepen of what you have tried (sample code of what you have done).
+  In general, do not copy and paste code into a facebook post. It's headache inducing unless it's only a few lines.
+- State your expected outcome. (can be phrased in step 1)
+- Write a succinct and specific question.

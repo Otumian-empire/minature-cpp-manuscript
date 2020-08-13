@@ -1,0 +1,6 @@
+Document, design and implement a simple console (text) base game of your choice using all that we have learnt till now.
+Word of caution, it will be better you break the project down and use separate files for them. It can be any game at all.
+
+Create a new repository for this project. This really shows how much you have learnt.
+
+Thank you and I appreciate your time and effort.
