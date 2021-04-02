@@ -1,18 +1,26 @@
 # Exercises for part 0
 
-create a directory, cmdexercise in /home/username/
-create a file, exercise in cmdexercise
+## Create File and Folder
 
-rename exercise to Exercise
-rename cmdexercise to cmdExercise
+- create a directory, `cmdexercise` in `/home/username/`
+- create a file, `exercise` in `cmdexercise`
 
-in cmdExercise, create a folder, newcmdexercise
-duplicate Exercise as Exercise.bkp (this is like a backup so you copy and give a new name to the copy)
-move Exercise.bak into newcmdexercise
+## Rename File and Folder
 
-duplicate newcmdexercise as newcmdexercise.bkp
+- rename `exercise` to `Exercise`
+- rename `cmdexercise` to `cmdExercise`
 
-delete Exercise
-delete newcmdexercise
+- in `cmdExercise`, create a folder, `newcmdexercise`
 
-delete cmdExercise
+## Copy and Rename
+
+- duplicate `Exercise` as `Exercise.bkp` (this is like a backup so you copy and give a new name to the copy)
+- move `Exercise.bak` into `newcmdexercise`
+
+- duplicate `newcmdexercise` as `newcmdexercise.bkp`
+
+## Delete
+
+- delete `Exercise`
+- delete `newcmdexercise`
+- delete `cmdExercise`

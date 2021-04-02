@@ -1,28 +1,30 @@
 # Part 0 (Set up)
 
 ## Objective
+
 - overview
-- c++ command line interface basics
+- c++ command-line interface basics
 - c++ environment setup (compiler and text editor)
 - c++ hello world program (how to compile and run code)
 
 ## Goal
+
 - Know what, programming, source code, text editor, compiler, c++ is
 - get comfortable on the terminal, capable of CRUDing folders and files
 - download, install and set up a c++ compiler
 - compile and execute the first program in c++
 
-
 ## Overview
+
 This is a book that introduces programming concepts, using c++.
 There are projects after every Part.
 Read more on what c++ is from [cpp, wikipedia][wiki-cpp].
 
-
 ## C++ Command Line Interface Basics
+
 We will make use of the command more often, thus better to make acquaintance.
 
-``` sh
+```sh
 pwd, current working directory
 ls, list the content of the pwd
 ls -a, including hidden files
@@ -38,23 +40,22 @@ mv dir dir_path/, moves a directory called dir1 to another path but does not ren
 cp -r dir another_dir_name, copies the content of dir into another_dir_name
 cp -r dir dir_path/, duplicate dir into another path
 rmdir dir(s), removes empty dir(s)
-rm -r dir(s), remoevs dirs and their contents
+rm -r dir(s), removes dirs and their contents
 ```
 
-``` sh
+```sh
 touch file(s), creates files
-editor_name file, opens file in editor
-cat > file, create a file and overwrites is content. opens the file for writing
-cat >> file, opens file for writing but appending
+editor_name file, opens a file in the editor
+cat > file, create a file and overwrites its content. opens the file for writing
+cat >> file, opens the file for writing but appending
 echo data > file, just like cat, write data in file
 echo data >> file, appends data to file
 cp file1 file2, duplicates file1 as file2
-cp file another_path, duplicates file to path, name remains the same
+cp file another_path, duplicates file to path, the name remains the same
 mv file1 file2, renames file1 to file2
 mv file dir_path/, moves file from pwd to path
 rm file(s), removes files(s)
 ```
-
 
 ## C++ Environment Setup (Compiler And Text Editor)
 
@@ -62,7 +63,8 @@ Download Gnu c++ compiler (add to env path) and vscode or any other text editor
 
 C++ Hello World Program (How To Compile And Run Code)
 In the current pwd, mkdir helloworldproject
-``` sh
+
+```sh
 cd helloworldproject
 touch helloworld.cpp
 editor helloworld.cpp
@@ -70,33 +72,32 @@ editor helloworld.cpp
 
 or (open helloworld.cpp) and add the snippet below
 
-``` cpp
+```cpp
 // helloworld.cpp - project
 #include <iostream>
 
 using namespace std;
 
 int main() {
-    cout << "Hello world!!" << endl;
+    cout << "Hello world, Dennis Ritchie!!" << endl;
     return 0;
 }
 ```
 
-save the file.
-on the terminal compile helloworld.cpp,
+save the file. On the terminal, compile helloworld.cpp,
 `c++ helloworld.cpp `
 `./a.out`
 
+The end.
 
 #
-[wiki-cpp]:https://en.wikipedia.org/wiki/C%2B%2B
-[unix-workbench]:https://seankross.com/the-unix-workbench/
-[mingw-web]:https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/
-[vscode-web]:https://code.visualstudio.com/download
-[atom-web]:https://atom.io/
-[sublim-web]:https://www.sublimetext.com/3
-[bracket-web]:http://brackets.io/
-[path-web]:https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)?redirectedfrom=MSDN
-[xcode-web]:https://developer.apple.com/download/
 
-The end.
+[wiki-cpp]: https://en.wikipedia.org/wiki/C%2B%2B
+[unix-workbench]: https://seankross.com/the-unix-workbench/
+[mingw-web]: https://osdn.net/projects/mingw/downloads/68260/mingw-get-setup.exe/
+[vscode-web]: https://code.visualstudio.com/download
+[atom-web]: https://atom.io/
+[sublim-web]: https://www.sublimetext.com/3
+[bracket-web]: http://brackets.io/
+[path-web]: https://docs.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ee537574(v=office.14)?redirectedfrom=MSDN
+[xcode-web]: https://developer.apple.com/download/
